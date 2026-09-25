@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fce4f5;
+    color: #4a235a;
+    text-align: center;
+}
+
+/* Hlavní části stránky */
+
+header,
+nav,
+main,
+footer {
+    width: 80%;
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hlavička */
+
+header {
+    background-color: #e89ac7;
+    padding: 3rem 2rem;
+    margin-top: 2rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+header h1 {
+    color: #6d267d;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Menu */
+
+nav {
+    background-color: #8e44ad;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Změna při najetí myší */
+
+nav a:hover {
+    color: #ffd1ec;
+    text-decoration: underline;
+}
+
+/* Hlavní obsah */
+
+main {
+    padding: 1rem 0;
+}
+
+section {
+    background-color: white;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    border-radius: 1rem;
+}
+
+h2 {
+    color: #8e44ad;
+    font-size: 1.8rem;
+}
+
+/* Grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+/* Kartičky */
+
+.card {
+    background-color: #f6c5e0;
+    border: 2px solid #d982bb;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: 0.3s;
+}
+
+.card h3 {
+    color: #762b83;
+}
+
+/* Hover efekt */
+
+.card:hover {
+    background-color: #e89ac7;
+    transform: scale(1.03);
+}
+
+/* Patička */
+
+footer {
+    background-color: #8e44ad;
+    color: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+/* Menší obrazovky */
+
+@media (max-width: 40rem) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
